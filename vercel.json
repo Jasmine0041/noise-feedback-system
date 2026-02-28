@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "name": "noise-feedback-system",
+  "buildCommand": "npm run build:client",
+  "outputDirectory": "dist/client",
+  "framework": null,
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/(.*\\.(js|css|svg|png|jpg|jpeg|gif|ico|json|woff|woff2|ttf|eot))",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
